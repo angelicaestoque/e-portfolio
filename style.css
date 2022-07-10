@@ -29,7 +29,7 @@ li {
     display: flex;
 }
 
-.flex-1{
+.flex-1 {
     flex: 1;
 }
 
@@ -87,12 +87,16 @@ transition: all 300ms ease;
 
 /* ABOUT ME */
 
-#about-me{
+#about-me {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+.about-me__info {
+    display: flex;
+    flex-direction: column;
+}
 .about-me__info--container {
     display: flex;
     flex-direction: column;
@@ -101,9 +105,10 @@ transition: all 300ms ease;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
+ 
 }
 
-.about-me__info--mask {
+.about-me__picture--mask {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -124,7 +129,24 @@ transition: all 300ms ease;
 margin-bottom: 16px;
 }
 
-.about-me__info--para{
+.about-me__info--para {
 font-size: 20px;
 margin-bottom: 28px;
+}
+
+.about-me__link {
+    font-size: 20px;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px;
+}
+
+.about-me__img--container {
+    flex: 1;
+display: flex;
+align-items: center;
+}
+
+.about-me__img {
+    width: 100%;
 }
